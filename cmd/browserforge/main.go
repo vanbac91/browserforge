@@ -5,7 +5,7 @@ import (
    "fmt"
    "os"
 
-   "github.com/yourneighborhoodchef/browserforge/fingerprint"
+   "github.com/vanbac91/browserforge/fingerprint"
 )
 
 func main() {
