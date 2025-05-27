@@ -3,7 +3,7 @@
 package browserforge
 
 import (
-	"github.com/yourneighborhoodchef/browserforge/fingerprint"
+	"github.com/vanbac91/browserforge/fingerprint"
 )
 
 // Generator is the main fingerprint generator
