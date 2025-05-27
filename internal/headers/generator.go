@@ -5,8 +5,8 @@ import (
    "fmt"
    "strings"
 
-   "github.com/yourneighborhoodchef/browserforge/internal/bayesian"
-   "github.com/yourneighborhoodchef/browserforge/internal/data"
+   "github.com/vanbac91/browserforge/internal/bayesian"
+   "github.com/vanbac91/browserforge/internal/data"
 )
 
 // HeaderGenerator generates HTTP headers based on constraints.
