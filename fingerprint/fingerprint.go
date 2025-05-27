@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/yourneighborhoodchef/browserforge/internal/bayesian"
-	"github.com/yourneighborhoodchef/browserforge/internal/headers"
+	"github.com/vanbac91/browserforge/internal/bayesian"
+	"github.com/vanbac91/browserforge/internal/headers"
 )
 
 // Generator creates browser fingerprints that can be used for web scraping.
