@@ -4,7 +4,7 @@ import (
    "encoding/json"
    "fmt"
 
-   "github.com/yourneighborhoodchef/browserforge/internal/data"
+   "github.com/vanbac91/browserforge/internal/data"
 )
 
 // networkDefinition represents the JSON structure of the Bayesian network.
