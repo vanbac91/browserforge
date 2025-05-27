@@ -145,17 +145,17 @@ func updateFirefoxVersion(fp *Fingerprint, realVersion string) {
 	}
 	
 	// Regex to match Firefox version numbers like "100.0" in strings
-	re := regexp.MustCompile(`(?<!\d)(1[0-9]{2})(\.[0-9]+)(?!\d)`)
+	re := regexp.MustCompile(`1[0-9]{2}(\.[0-9]+)`)
 	
 	// Update userAgent
-	fp.Navigator.UserAgent = re.ReplaceAllString(fp.Navigator.UserAgent, realVersion+"$2")
+	fp.Navigator.UserAgent = re.ReplaceAllString(fp.Navigator.UserAgent, realVersion+"$1")
 	
 	// Update appVersion
-	fp.Navigator.AppVersion = re.ReplaceAllString(fp.Navigator.AppVersion, realVersion+"$2")
+	fp.Navigator.AppVersion = re.ReplaceAllString(fp.Navigator.AppVersion, realVersion)
 	
 	// Update oscpu if present
 	if fp.Navigator.Oscpu != nil {
-		*fp.Navigator.Oscpu = re.ReplaceAllString(*fp.Navigator.Oscpu, realVersion+"$2")
+		*fp.Navigator.Oscpu = re.ReplaceAllString(*fp.Navigator.Oscpu, realVersion)
 	}
 }
 
